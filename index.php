@@ -1,8 +1,8 @@
 <?php 
-	include 'conn.php';
-	$limit = isset($_POST["limit-records"]) ? $_POST["limit-records"] : 5000;
-	$page = isset($_GET['page']) ? $_GET['page'] : 1;
-	$start = ($page - 1) * $limit;
+include 'conn.php';
+$limit = isset($_POST["limit-records"]) ? $_POST["limit-records"] : 5000;
+$page = isset($_GET['page']) ? $_GET['page'] : 1;
+$start = ($page - 1) * $limit;
 
 //replace post as your table name and sno as id(unique key) of your table
 
